@@ -1,0 +1,39 @@
+.message{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    margin: 15px;
+}
+.message_contents {
+    padding: 11px;
+    border-radius: 33px;
+    margin: 10px auto 10px 0;
+}
+
+.message_contents.isMe {
+    background-color: #0088cc;
+    color: white;
+}
+.message.isMe {
+    align-self: flex-end; /* Align messages with isMe=true to the right */
+}
+
+.message_contents:not(.isMe) {
+    background-color: rgb(128, 128, 128);
+    color: black;
+}
+
+.message > div > p{
+    color: white;
+}
+
+.message > div > small{
+    color: rgb(128, 128, 128);
+    position: absolute;
+    font-size: x-small;
+    right: 0;
+    bottom: -5px
+}
+
